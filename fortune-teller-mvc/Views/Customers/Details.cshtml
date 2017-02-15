@@ -1,13 +1,22 @@
 ﻿@model fortune_teller_mvc.Models.Customer
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "User Fortune";
 }
 
-<h2>Details</h2>
+<h2>The Fortune for <span>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</span></h2>
 
-<div>
-    <h4>Customer</h4>
+<p>
+    <span>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</span> will retire in <span>@ViewBag.RetirementAge</span> years
+    with $<span>@ViewBag.MoneyInBank</span> in the bank, a vacation home in <span>@ViewBag.VacationHome</span>, and a <span>@ViewBag.Transportation</span> to tool around in.
+</p>
+
+
+
+
+
+
+@*<div>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -63,4 +72,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
