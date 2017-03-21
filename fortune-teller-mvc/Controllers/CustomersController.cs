@@ -36,10 +36,10 @@ namespace fortune_teller_mvc.Controllers
 
             Random randomNum = new Random();
             ViewBag.RetirementAge = (randomNum.Next(65, 97));
-            ViewBag.VacationHome = "Bermuda";
-            ViewBag.Transportation = "Lamborghini";
+            ViewBag.VacationHome = "Goodyear, Arizona";
+            ViewBag.Transportation = "red scooter";
             ViewBag.MoneyInBank = (randomNum.Next(10000, 1000001));
-            return View(customer);
+            return View(customer);  
         }
 
         // GET: Customers/Create

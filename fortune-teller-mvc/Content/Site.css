@@ -1,12 +1,13 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: silver;
+    color: #1d005b;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +22,102 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar-inverse {
+    background-color: red;
+    border: 2px solid #05092e;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+        color: #05092e;
+}
+
+.navbar-brand {
+    font-family: 'Playball', cursive;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 30px;
+    color: #05092e;
+}
+
+.navbar-inverse .navbar-toggle:hover{
+    background-color: #05092e;
+}
+
+.container .jumbotron{
+    margin-top: 15px;
+    background-color: white;
+    color: red;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border: 2px solid red;
+}
+
+.jumbotron .inside-jumbotron{
+    background-color: #05092e;
+}
+
+.jumbotron h1{
+    text-align: center;
+}
+
+#top-header{
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#bottom-header{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.create h2, p{
+    text-align: center;
+    align-content: center;
+}
+
+.thumbnail {
+    border: 2px solid red;
+}
+
+.caption{
+    background-color: #05092e;
+    text-align: center;
+    align-content: center;
+}
+
+.caption h3{
+        color: red;
+}
+
+.btn-danger{
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover{
+    background-color: white;
+    color: red;
+}
+
+
+footer{
+    min-height: 80px;
+    text-align: center;
+    background-color: #05092e;
+    color: red;
+    font-size: 20px;
+}
+
+#footer-fun{
+    background-color: white;
+    border: 2px solid red;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 0px;
 }

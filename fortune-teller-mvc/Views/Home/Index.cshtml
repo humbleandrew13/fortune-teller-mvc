@@ -3,7 +3,9 @@
 }
 
 <div class="jumbotron">
-    <h1>Fortune Teller</h1>
-    <p class="lead">Create user information for yourself and view the details to see your fortune.</p>
-    <p>@Html.ActionLink("View all Users or Create a New User", "Index", "Customers")</p>
+    <div class="inside-jumbotron">
+        <h1 id="top-header">Fortune Teller</h1>
+        <p class="lead">Create user information for yourself and view the details to see your fortune.</p>
+        <p id="bottom-header">@Html.ActionLink("View all Users or Create a New User", "Index", "Customers")</p>
+    </div>
 </div>

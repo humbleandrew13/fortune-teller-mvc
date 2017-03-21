@@ -1,15 +1,35 @@
 ﻿@model IEnumerable<fortune_teller_mvc.Models.Customer>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Users";
 }
+<div class="create">
+    <h2>Current Users</h2>
 
-<h2>Index</h2>
+    <p>
+        @Html.ActionLink("Create New User", "Create", "Customers", null, new { @class = "btn btn-lg" })
+    </p>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3><span>@Html.DisplayFor(modelItem => item.FirstName) @Html.DisplayFor(modelItem => item.LastName)</span></h3>
+                        <p>@Html.ActionLink("Get that fortune!", "Details", "Customers", new { id = item.CustomerID }, new { @class = "btn btn-lg btn-danger" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
@@ -60,4 +80,4 @@
     </tr>
 }
 
-</table>
+</table>*@
